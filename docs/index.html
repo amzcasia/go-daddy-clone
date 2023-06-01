@@ -158,7 +158,7 @@
 
             </div>
             <div class="flex flex-col p-5 max-w-[320px] absolute right-0 bg-white h-full lg:h-auto lg:rounded-md lg:border">
-                <button id="user-login-button-close" class="absolute w-5 h-5 borderss top-2 right-2 ">
+                <button id="user-login-button-close" class="absolute w-5 h-5 top-2 right-2 ">
                     <i class="text-base text-black fa-solid fa-xmark"></i>
                 </button>
                 <div class="grid content-between gap-4 pb-5">
@@ -186,51 +186,64 @@
     <!-- Start of Main Content -->
     <main class="">
         <!-- Start of Domain Search 1 -->
-        <section class="flex w-full borderss px">
-            <form>
-                <input class="bg-gray-200" type="text">
-                <button><span>Search Domain</span></button>
+        <section class="flex justify-between w-full py-1 lg:py-4 px">
+            <form class="flex w-full lg:w-[60%] text-xl">
+                <input class="w-full p-2 pl-5 bg-gray-200" type="text" id="domain-input-2" name="domain-input-2" placeholder="Type the domain you want" required>
+                
+                <button class="bg-[#00838C] text-white px-5 py-5 text-base font-semibold">
+                    <span class="hidden lg:inline-block">Search&nbsp;domain</span>
+                    <span class="px-4 text-lg text-white lg:hidden"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
             </form>
-            <div class="flex gap-4">
-                <div class="flex gap-1">
-                    <span>.store</span>
+            <div class="lg:flex items-center justify-around gap-4 w-[40%] text-gray-500 hidden">
+                <div class="flex items-center gap-1">
+                    <span class="text-lg font-bold">.store</span>
                     <span>P65.52</span>
                 </div>
-                <div class="flex gap-1">
-                    <span>.ph</span>
+                <div class="flex items-center gap-1">
+                    <span class="text-xl font-bold">.ph</span>
                     <span>P969.00</span>
                 </div>
-                <div class="flex gap-1">
-                    <span>.co</span>
+                <div class="flex items-center gap-1">
+                    <span class="text-xl font-bold">.co</span>
                     <span>P299.00</span>
                 </div>
-                <div class="flex gap-1">
-                    <span>.inc</span>
+                <div class="flex items-center gap-1">
+                    <span class="text-xl font-bold" text-lg>.inc</span>
                     <span>P56,189.11</span>
                 </div>
             </div>
         </section>
         <!-- End of Domain Search 1 -->
         <!-- Start of Hero -->
-        <section class="grid w-full gap-4 pt-10 px lg:flex">
-            <div class="lg:w-[70%] min-h-[400px] bg-[#E3DDDB]">
-
+        <section class="grid w-full gap-4 pt-1 lg:pt-10 px lg:flex">
+            <div class="lg:w-[70%] min-h-[400px] bg-[#E3DDDB] grid grid-cols-1 lg:grid-cols-2 rounded-md">
+                <div class="grid gap-3 p-5 lg:p-10 justify-items-center lg:justify-items-start">
+                    <p class="font-semibold">Websites + Marketing</p>
+                    <p class="text-3xl font-bold text-center bodoni">Easy to build, beautiful and designed for&nbsp;growth.</p>
+                    <p class="font-semibold text-center">Built-in marketing tools make it easy to promote your new site.</p>
+                    <button class="flex">
+                        <span class="px-10 py-3 font-semibold text-white bg-black rounded-md">Start for Free</span>
+                    </button>
+                    <p class="text-sm">No charge, no obligation, nothing to cancel.**</p>
+                </div>
+                <div class=""></div>
             </div>
-            <div class="lg:w-[30%] min-h-[400px] bg-[#FBE9DA] grid md:grid-cols-12 lg:grid-cols-1">
-                <div class="md:col-span-7 lg:col-span-1">
+            <div class="lg:w-[30%] min-h-[400px] bg-[#FBE9DA] grid md:grid-cols-12 lg:grid-cols-1 p-10">
+                <div class="grid md:col-span-7 lg:col-span-1 justify-items-center">
                     <p>Domain Names</p>
-                    <p>Grab a .com for ₱10.90/1st yr.</p>
+                    <p class="text-3xl font-bold text-center lg:text-5xl bodoni">Grab a .com for ₱10.90/1st yr.</p>
                     <p>3-year purchase required</p>
                 </div>
-                <div class="md:col-span-5 lg:col-span-1">
-                    <button>Find Your Domain</button>
-                    <p><a class="underline hover:no-underline" href="#">Transfer Your Domain</a></p>
+                <div class="grid md:col-span-5 lg:col-span-1 justify-items-center">
+                    <button class="flex"><span class="px-10 py-3 font-semibold text-white bg-black rounded-md">Find Your Domain</span></button>
+                    <p class="flex font-semibold"><a class="flex hover:underline" href="#">Transfer Your Domain</a></p>
                 </div>
             </div>
         </section> 
         <!-- End of Hero -->
         <!-- Pricing Section -->
-        <section class="pt-20 px">
+        <section class="pt-5 lg:pt-20 px">
             <ul class="grid grid-cols-2 font-semibold border-r border-black lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-5 lg:border-b">
                 <li class="border-t border-l border-black">
                     <a class="flex justify-center w-full h-full text-center pricing-box" href="#">
@@ -359,13 +372,13 @@
         </section>
         <!-- End of Testimonials -->
         <!-- Services Section -->
-        <section class="grid md:grid-cols-2 gap-y-2 px">
-            <div class="flex items-center justify-center order-2 px-32 md:order-1">
+        <section class="grid pt-5 md:grid-cols-2 gap-y-2 px">
+            <div class="flex items-center justify-center order-2 px-4 lg:px-32 md:order-1">
                 <div class="">
                     <p>Professional Email</p>
-                    <p class="py-5 text-4xl font-bold bodoni">Build on your success.</p>
+                    <p class="py-5 text-3xl font-bold lg:text-4xl bodoni">Build on your success.</p>
                     <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
-                    <button class="px-4 py-2 mt-3 text-xl font-semibold border-2 border-black rounded-md
+                    <button class="px-4 py-2 mt-3 text-lg lg:text-xl font-semibold border-2 border-black rounded-md
                     hover:scale-[103%] transition">See Email Plans</button>
                 </div>
             </div>
@@ -376,17 +389,20 @@
                 <img class="w-full bg-center" src=".\images\bg-2.jpg">
                 
             </div>
-            <div class="order-4">
-                <p>Professional Email</p>
-                <p>Build on your success.</p>
-                <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
-                <button>See Email Plans</button>
+            <div class="grid order-4 gap-y-4">
+                <p>SSL Security</p>
+                <p class="text-3xl font-bold lg:text-4xl bodoni">Protect your data and your customers.</p>
+                <p>An SSL Certificate protects the data going to and from your site — from personal info to credit card numbers. And when visitors feel safe, they're more likely to give you their business.</p>
+                <div class="flex font-semibold gap-x-4">
+                    <a class="flex"><span class="px-4 py-2 border-2 border-black rounded-md">Get Secure</span></a>
+                    <a class="flex items-center"><span class="">Check your security</span></a>
+                </div>
             </div>
-            <div class="order-6 md:order-5">
-                <p>Professional Email</p>
-                <p>Build on your success.</p>
-                <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
-                <button>See Email Plans</button>
+            <div class="grid order-6 gap-4 px-4 md:order-5">
+                <p>Hosting</p>
+                <p class="text-3xl font-bold bodoni">Fast, secure and always online.</p>
+                <p>Already have a website? Give it the home it deserves. With industry-leading load times, guaranteed 99.9% uptime and expert, 24/7 support, your site couldn’t ask for more.</p>
+                <a class="flex" href="#"><span class="px-4 py-2 border-2 border-black rounded-md">See Web Hosting Plans</span></a>
             </div>
             <div class="order-5 md:order-6">
                 <img class="w-full bg-center" src=".\images\bg-3.jpg">
@@ -395,34 +411,46 @@
         <!-- End of Services -->
 
         <!-- Domain Search 2 -->
-        <section class="text-center bg-[#D8EFEF] py-20">
-            <p class="text-4xl">It all starts with a domain.</p>
-            <p class="pt-10 font-semibold">Make your idea real. Claim your space online with a domain.</p>
-            <form class="pt-3">
-                <input class="p-2 borderss max-w-[500px] w-full" type="text" id="domain-input-2" name="domain-input-2" placeholder="Find your perfect domain" required>
+        <section class="text-center bg-[#D8EFEF] py-20 px-5">
+            <p class="text-4xl font-bold bodoni">It all starts with a domain.</p>
+            <p class="font-semibold lg:pt-10">Make your idea real. Claim your space online with a domain.</p>
+            <form class="flex pt-20">
+                <input class="p-2 max-w-[500px] w-full" type="text" id="domain-input-2" name="domain-input-2" placeholder="Find your perfect domain" required>
                 
-                <button class="borderss bg-[#00838C] text-white px-4 py-2"><input type="submit" value="Submit"></button>
+                <button class="bg-[#00838C] text-white px-4 py-2"><span class="px-4 text-lg text-white lg:hidden"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                <button class="bg-[#00838C] text-white px-4 py-2 hidden lg:inline"><input type="submit" value="Submit"></button>
             </form>
         </section>
         <!-- End of Domain Search 2 -->
 
         <!-- Why go Daddy -->
-        <section class="">
-            <img>
+        <section class="grid lg:grid-cols-2">
             <div>
-                <p>GoDaddy guides - logo</p>
-                <p>Why go with GoDaddy?</p>
+                <img class="" src=".\images\laugh.jpg">
+            </div>
+            <div class="grid p-8 gap-y-5">
+                <p class="flex items-center">
+                    <img class="h-10 aspect-auto" src=".\images\godaddy-logo.svg">
+                    <span class="text-lg">guides</span>
+                </p>
+                <p class="text-4xl font-bold bodoni">Why go with GoDaddy?</p>
                 <p>Because we know that even the best technology is only as good as the people behind it. That’s why we offer expert phone support, plus a lot more.  </p>
                 <p>Call our technical support team at Support Manila: (02) 8231-2988.</p>
-                <button class="borderss">Get Help</button>
+                <div class="flex">
+                    <a class="flex" href="#"><span class="px-4 py-2 border-2 border-black rounded-md">Get Help</span></a>
+                </div>
+                
+                <!--  -->
             </div>
         </section>
         <!-- End of WHy goDaddy -->
 
         <!-- FAQ Section -->
         <section class="w-full text-center">
-            <p class="text-4xl font-semibold px">Millions of customers rely on our domains and web hosting to get their ideas online.</p>
-            <p class="pt-5 text-2xl font-semibold px">Frequently Asked Questions</p>
+            <div class="md:max-w-[80%] px-[5%] md:px-[10%]">
+                <p class="text-4xl font-semibold px">Millions of customers rely on our domains and web hosting to get their ideas online.</p>
+                <p class="pt-5 text-2xl font-semibold px">Frequently Asked Questions</p>
+            </div>
            
             <div class="text-left px-[10%] pt-3 md:max-w-[80%] mx-auto">
                 <div id="faq-1" class="py-5 border-t border-gray-500 cursor-pointer">
@@ -554,12 +582,12 @@
             <p class="pt-5">Third-party logos and marks are registered trademarks of their respective owners. All rights reserved.</p>
 
         </div>
-        <div class="py-10 text-xl font-semibold text-center text-black px bg-mygray">
+        <div class="py-10 text-xl font-semibold text-center text-black bg-gray-100 px">
             <span class="">Need help? Call our award-winning support team at Support&nbsp;Manila: (00) 9999-9999</span>
         </div> 
         <div class="bg-myblk px">
             <a class="block py-10" href="#">
-                <p class="text-xl font-semibold">We love taking your call.</p>
+                <p class="text-xl font-semibold text-gray-400">We love taking your call.</p>
                 <div class="flex items-center">
                     <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png">
                     <span class="text-3xl font-thin">guides</span>
