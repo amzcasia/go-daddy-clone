@@ -64,10 +64,10 @@
         </nav>
         <!-- Mobile sliding navigation -->
 
-        <nav id="mobile-sliding-nav" class="h-screen w-screen absolute top-0 left-0 z-50 flex transition duration-700 translate-x-[-100%]">
-            <div class="h-[100dvh] w-[90dvw] bg-white px-5 grid content-between pb-5">
+        <nav id="mobile-sliding-nav" class="absolute top-0 left-0 z-50 flex hidden w-screen h-screen transition duration-500 bg-black bg-opacity-0 ">
+            <div id="mobile-sliding-nav-content" class="translate-x-[-100%] h-[100dvh] w-[90dvw] bg-white px-5 grid content-between pb-5 transition duration-500">
                 <ul class="grid gap-y-8">
-                    <li class=""><button id="mobile-nav-logo" class="h-[60px] flex items-center"><img class="w-12 h-12 -translate-x-1" src=".\images\go-daddy-logo-white.png"></button>
+                    <li class=""><button id="mobile-nav-logo" class="h-[60px] flex items-center"><img class="w-12 h-12 -translate-x-1" src=".\images\go-daddy-logo-black.png"></button>
                     </li>
                     <li class="">
                         <a class="flex items-center justify-between mobile-nav-list" href="#">
@@ -114,7 +114,7 @@
                     </button></li>
                 </ul>
             </div>
-            <button id="mobile-nav-close" class="h-screen w-[10dvw] backdrop-blur-[2px] bg-black bg-opacity-60 flex justify-center">
+            <button id="mobile-nav-close" class="h-screen w-[10dvw] backdrop-blur-[2px] opacity-0 bg-opacity-60 flex justify-center transition duration-500">
                 <div class="flex justify-center h-[60px] items-center">
                     <i class="text-3xl text-white fa-solid fa-xmark"></i>
                 </div>
@@ -122,15 +122,15 @@
 
         </nav>
          <!-- Contact Dropdown Section -translate-y-[120%] -->
-        <section id="contact-dropdown" class="absolute w-full px py-4 grid md:grid-cols-2 content-between z-[49] scale-y-0 scale-x-100 hidden origin-top transition duration-300 bg-white">
-            <div class="hidden pt-4 contact-entry">
+        <section id="contact-dropdown" class="absolute w-full px py-4 grid md:grid-cols-2 content-between z-[49] scale-y-0 hidden origin-top transition duration-300 bg-white">
+            <div class="pt-4 opacity-0 contact-entry">
                 <p class="text-lg font-semibold">Call Us</p>
                 <p>Call our award-winning sales & support team</p>
                 <p><a class="hover:scale-[103%] flex hover:underline" href="#">Support Manila: (02) 8231-2988</a></p>
                 <p class="pt-3">Global Directory</p>
                 <p><a class="hover:scale-[103%] flex hover:underline" href="#">Phone numbers and hours</a></p>
             </div>
-            <div class="hidden pt-4 contact-entry">
+            <div class="pt-4 opacity-0 contact-entry">
                 <p class="text-lg font-semibold">Chat Now</p>
                 <p class="pt-4">Chat with our sales & support team for quick answers on product features, pricing and more.</p>
                 <div class="flex gap-2 pt-3 font-semibold">
@@ -164,15 +164,15 @@
                 <div class="grid content-between gap-4 pb-5">
                     <p class="font-semibold">Registered Users</p>
                     <p>Have an account? Sign in now.</p>
-                    <p><a class="underline hover:no-underline" href="#">Sign In</a></p>
+                    <p><a class="underline hover:no-underline text-primary-dark" href="#">Sign In</a></p>
                 </div>
                 <div class="grid content-between gap-4 pt-4 pb-5 border-t border-black">
                     <p>New Customer</p>
                     <p>New to GoDaddy? Create an account to get started today.</p>
-                    <p><a class="underline hover:no-underline" href="#">Create an Account</a></p>
+                    <p><a class="underline hover:no-underline text-primary-dark" href="#">Create an Account</a></p>
                 </div>
-                <div class="grid content-between gap-4 pt-4 border-t border-black">
-                    <p>INBOX LINKS</p>
+                <div class="grid content-between gap-4 pt-4 border-t border-black text-primary-dark">
+                    <p class="text-gray-600">INBOX LINKS</p>
                     <p><a href="#">Sign in to Office 365 Email</a></p>
                     <p><a href="#">Sign in to GoDaddy Webmail</a></p>
                 </div>
@@ -404,8 +404,8 @@
         <!-- End of Testimonials -->
         <!-- Services Section -->
         <section class="grid pt-5 md:grid-cols-2 gap-y-2 px lg:text-lg">
-            <div class="flex items-center justify-center order-2 px-4 lg:px-32 md:order-1">
-                <div class="py-2 lg:py-0">
+            <div class="flex items-center justify-center order-2 px-4 md:order-1">
+                <div class="py-2 lg:py-0 lg:max-w-[70%]">
                     <p>Professional Email</p>
                     <p class="py-5 text-3xl font-bold lg:text-5xl bodoni">Build on your success.</p>
                     <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
@@ -414,20 +414,23 @@
                 </div>
             </div>
             <div class="relative order-1 md:order-2">
-                <img class="w-full bg-center" src=".\images\bg-1.jpg">
+                <img class="object-cover object-center w-full md:h-full md:w-auto" src=".\images\bg-1.jpg">
             </div>
             <div class="order-3">
-                <img class="w-full bg-center" src=".\images\bg-2.jpg">
+                <img class="w-full bg-center md:h-full md:w-auto" src=".\images\bg-2.jpg">
                 
             </div>
-            <div class="grid order-4 py-2 lg:content-center gap-y-4 lg:px-20 lg:py-0">
-                <p class="">SSL Security</p>
-                <p class="text-3xl font-bold lg:text-5xl bodoni">Protect your data and your customers.</p>
-                <p class="">An SSL Certificate protects the data going to and from your site — from personal info to credit card numbers. And when visitors feel safe, they're more likely to give you their business.</p>
-                <div class="flex font-semibold gap-x-4">
-                    <a class="flex" href="#"><span class="px-4 py-2 border-2 border-black rounded-md hover:scale-[103%] transition">Get Secure</span></a>
-                    <a class="flex items-center" href="#"><span class="hover:scale-[103%] transition hover:underline">Check your security</span></a>
+            <div class="grid order-4 px-4 py-2 justify-items-center lg:content-center lg:py-0">
+                <div class="lg:max-w-[80%] grid gap-y-4">
+                    <p class="">SSL Security</p>
+                    <p class="text-3xl font-bold lg:text-4xl xl:text-5xl bodoni">Protect your data and your customers.</p>
+                    <p class="">An SSL Certificate protects the data going to and from your site — from personal info to credit card numbers. And when visitors feel safe, they're more likely to give you their business.</p>
+                    <div class="flex font-semibold gap-x-4">
+                        <a class="flex" href="#"><span class="px-4 py-2 border-2 border-black rounded-md hover:scale-[103%] transition">Get Secure</span></a>
+                        <a class="flex items-center" href="#"><span class="hover:scale-[103%] transition hover:underline">Check your security</span></a>
+                    </div>
                 </div>
+
             </div>
             <div class="grid order-6 gap-4 px-4 py-2 md:order-5 lg:content-center lg:px-20 lg:py-0">
                 <p>Hosting</p>
@@ -436,7 +439,7 @@
                 <a class="flex" href="#"><span class="font-semibold px-4 py-2 border-2 border-black rounded-md hover:scale-[103%] transition">See Web Hosting Plans</span></a>
             </div>
             <div class="order-5 md:order-6">
-                <img class="w-full bg-center" src=".\images\bg-3.jpg">
+                    <img class="object-cover object-left h-full" src=".\images\bg-3.jpg">
             </div>
         </section>
         <!-- End of Services -->
@@ -445,7 +448,7 @@
         <section class="text-center bg-[#D8EFEF] py-20 lg:py-36 px-5 mt-32 lg:grid lg:content-center">
             <p class="text-4xl font-bold lg:text-5xl bodoni">It all starts with a domain.</p>
             <p class="pt-5 font-semibold lg:pt-16">Make your idea real. Claim your space online with a domain.</p>
-            <form class="flex justify-center pt-20 lg:pt-5">
+            <form class="flex justify-center pt-32 lg:pt-5">
                 <input class="p-2 max-w-[500px] w-full lg:pl-5" type="text" id="domain-input-2" name="domain-input-2" placeholder="Find your perfect domain" required>
                 
                 <button class="bg-[#00838C] text-white px-4 py-2 lg:hidden"><span class="px-4 text-lg text-white"><i class="fa-solid fa-magnifying-glass"></i></span></button>
@@ -624,9 +627,9 @@
                     <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png">
                     <span class="text-3xl font-thin">guides</span>
                     <!-- from-[#8951B8] to-[#486ECA] -->
-                    <svg class="h-24 pl-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                      </svg>
+                    <!-- <svg class="h-24 pl-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"> -->
+                        <!-- <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /> -->
+                      <!-- </svg> -->
                       
                 </div>
             </a>
@@ -635,7 +638,7 @@
             <span class="">Prices include applicable taxes and ICANN fees.</span>
         </div>
         <!-- Footer Links -->
-        <nav class="grid grid-cols-1 pt-10 text-xs text-white md:grid-cols-2 lg:grid-cols-6 bg-myblk px">
+        <nav class="grid grid-cols-1 pt-10 text-sm text-white md:grid-cols-2 lg:grid-cols-6 bg-myblk px">
             <div class="">
                 <!-- <p class="text-base font-semibold hover:cursor-pointer md:hover:cursor-default">About Go Daddy</p> -->
                 <div id="footer-about-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults ">
