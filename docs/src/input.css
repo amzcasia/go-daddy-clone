@@ -18,6 +18,10 @@
     .shadow-3xl {
         box-shadow: 0px 0px 10px -1px gray;
     }
+
+    .bodoni {
+        font-family: 'Libre Bodoni', serif;
+    }
     
 }
 
@@ -36,7 +40,7 @@
         @apply -translate-x-2;
    }
    .arrow {
-        @apply translate-x-2 opacity-100 scale-100 text-white;
+        @apply text-white scale-100 translate-x-2 opacity-100;
    }
 }
 

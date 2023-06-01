@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go-Daddy</title>
     <link rel="stylesheet" href=".\dist\output.css">
+    <link rel="icon" href=".\images\go-daddy-logo-white.png">
     <script src="https://kit.fontawesome.com/c322fa12db.js" crossorigin="anonymous"></script>
     <script src=".\dist\main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body class="relative text-base">
     <header>
@@ -15,7 +21,7 @@
             <div class="hidden lg:flex lg:items-center">
                 <div id="brand">
                     <a href="#">
-                    <img class="h-[25px] w-auto aspect-[512/105]" src=".\images\godaddy-logo.svg"></a>
+                    <img class="h-[25px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png"></a>
                 </div>
                 
                 <ul id="main-nav" class="flex gap-1 pl-5 font-semibold ">
@@ -35,7 +41,7 @@
             </ul>
             <div class="flex items-center gap-3 lg:hidden">
                 <button id="mobile-nav-open" class="w-10 h-10 " ><i class="text-xl fa-solid fa-bars"></i></button>
-                <a href="#"><img class="w-10 h-10" src=".\images\GoDaddy-Logo-notext.svg"></a>
+                <a href="#"><img class="w-10 h-10" src=".\images\go-daddy-logo-white.png"></a>
             </div>
             <ul class="flex items-center gap-3 lg:hidden">
                 <li><button id="contact-nav"><svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -61,7 +67,7 @@
         <nav id="mobile-sliding-nav" class="h-screen w-screen absolute top-0 left-0 z-50 flex transition duration-700 translate-x-[-100%]">
             <div class="h-[100dvh] w-[90dvw] bg-white px-5 grid content-between pb-5">
                 <ul class="grid gap-y-8">
-                    <li class=""><button id="mobile-nav-logo" class="h-[60px] flex items-center"><img class="w-12 h-12 -translate-x-1" src=".\images\GoDaddy-Logo-notext.svg"></button>
+                    <li class=""><button id="mobile-nav-logo" class="h-[60px] flex items-center"><img class="w-12 h-12 -translate-x-1" src=".\images\go-daddy-logo-white.png"></button>
                     </li>
                     <li class="">
                         <a class="flex items-center justify-between mobile-nav-list" href="#">
@@ -180,8 +186,29 @@
     <!-- Start of Main Content -->
     <main class="">
         <!-- Start of Domain Search 1 -->
-        <section>
-
+        <section class="flex w-full borderss px">
+            <form>
+                <input class="bg-gray-200" type="text">
+                <button><span>Search Domain</span></button>
+            </form>
+            <div class="flex gap-4">
+                <div class="flex gap-1">
+                    <span>.store</span>
+                    <span>P65.52</span>
+                </div>
+                <div class="flex gap-1">
+                    <span>.ph</span>
+                    <span>P969.00</span>
+                </div>
+                <div class="flex gap-1">
+                    <span>.co</span>
+                    <span>P299.00</span>
+                </div>
+                <div class="flex gap-1">
+                    <span>.inc</span>
+                    <span>P56,189.11</span>
+                </div>
+            </div>
         </section>
         <!-- End of Domain Search 1 -->
         <!-- Start of Hero -->
@@ -336,7 +363,7 @@
             <div class="flex items-center justify-center order-2 px-32 md:order-1">
                 <div class="">
                     <p>Professional Email</p>
-                    <p class="py-5 text-4xl">Build on your success.</p>
+                    <p class="py-5 text-4xl font-bold bodoni">Build on your success.</p>
                     <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
                     <button class="px-4 py-2 mt-3 text-xl font-semibold border-2 border-black rounded-md
                     hover:scale-[103%] transition">See Email Plans</button>
@@ -534,7 +561,7 @@
             <a class="block py-10" href="#">
                 <p class="text-xl font-semibold">We love taking your call.</p>
                 <div class="flex items-center">
-                    <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\godaddy-logo.svg">
+                    <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png">
                     <span class="text-3xl font-thin">guides</span>
                     <!-- from-[#8951B8] to-[#486ECA] -->
                     <svg class="h-24 pl-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -649,7 +676,7 @@
             </div>
             <div class="block pt-5 bg-myblk lg:hidden"><hr></div> <!-- horizontal line -->
             <div class="grid pt-5 language md:flex md:justify-between md:items-center">
-                <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\godaddy-logo.svg">
+                <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png">
                 
                 <div class="pt-4 socials md:flex md:gap-x-5">
                     <i class="text-2xl text-white fa-brands fa-facebook"></i>
@@ -661,7 +688,7 @@
         </section>
         <section class="grid pt-10 pb-4 text-white bg-myblk md:hidden lg:flex lg:justify-between lg:items-center px ">
             <div class="grid language lg:flex lg:items-center">
-                <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\godaddy-logo.svg">
+                <img class="h-[50px] w-auto aspect-[512/105]" src=".\images\go-daddy-text-logo-white.png">
                 <div class="block pt-5 bg-myblk lg:hidden"><hr></div> <!-- horizontal line -->
                 <div class="flex justify-around pt-8 lg:pt-0">
                     <button class="mx-4 ml-8">
