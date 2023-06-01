@@ -186,7 +186,7 @@
     <!-- Start of Main Content -->
     <main class="">
         <!-- Start of Domain Search 1 -->
-        <section class="flex justify-between w-full py-1 lg:py-4 px">
+        <section class="flex justify-between w-full py-1 pt-2 lg:py-4 px">
             <form class="flex w-full lg:w-[65%] text-xl">
                 <input class="w-full p-2 pl-5 bg-gray-200" type="text" id="domain-input-2" name="domain-input-2" placeholder="Type the domain you want" required>
                 
@@ -222,23 +222,52 @@
                     <p class="font-semibold">Websites + Marketing</p>
                     <p class="text-3xl font-bold text-center lg:text-start lg:text-4xl bodoni">Easy to build, beautiful and designed for&nbsp;growth.</p>
                     <p class="font-semibold text-center">Built-in marketing tools make it easy to promote your new site.</p>
-                    <button class="flex">
-                        <span class="px-10 py-3 font-semibold text-white bg-black rounded-md">Start for Free</span>
-                    </button>
+                    <a class="flex bg-black rounded-md group hover:scale-[103%] duration-300" href="#">
+                        <span class="px-10 py-3 font-semibold text-white transition translate-x-6 bg-black rounded-md group-hover:translate-x-0">Start for Free</span>
+
+
+                        <div class="flex items-center text-white duration-300 origin-left scale-x-0 -translate-x-5 opacity-0 group-hover:scale-x-100 group-hover:opacity-100 tarnsition">
+                            <svg class="w-10 h-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+
+                        <!--
+                        <div class="grid content-center translate-x-6 price">
+                            <p class="">Web Hosting</p>
+                            <p>P89.00/1st yr</p>
+                        </div>
+                        <div class="flex items-center scale-0 -translate-x-5 opacity-0 arrow">
+                            <svg class="w-10 h-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                         -->
+                        
+                    </a>
                     <p class="text-sm">No charge, no obligation, nothing to cancel.**</p>
                 </div>
                 <div class="">
                     <img class="object-cover h-full rounded-br-md rounded-bl-md lg:rounded-bl-none lg:rounded-tr-md" src=".\images\monitor.jpg" >
                 </div>
             </div>
-            <div class="lg:w-[30%] min-h-[400px] bg-[#FBE9DA] grid md:grid-cols-12 lg:grid-cols-1 p-10">
-                <div class="grid md:col-span-7 lg:col-span-1 justify-items-center lg:justify-items-start">
+            <div class="lg:w-[30%] bg-[#FBE9DA] grid md:grid-cols-12 lg:grid-cols-1 p-6 lg:p-10 content-start gap-5">
+                <div class="grid gap-5 md:col-span-7 lg:col-span-1 justify-items-center lg:justify-items-start">
                     <p>Domain Names</p>
-                    <p class="text-3xl font-bold text-center lg:text-start lg:text-4xl bodoni">Grab a .com for ₱10.90/1st yr.</p>
+                    <p class="text-2xl font-bold text-center lg:text-start lg:text-4xl bodoni">Grab a .com for ₱10.90/1st yr.</p>
                     <p>3-year purchase required</p>
                 </div>
-                <div class="grid md:col-span-5 lg:col-span-1 justify-items-center lg:justify-items-start">
-                    <button class="flex"><span class="px-10 py-3 font-semibold text-white bg-black rounded-md">Find Your Domain</span></button>
+                <div class="grid content-start gap-4 md:col-span-5 lg:col-span-1 justify-items-center lg:justify-items-start">
+                    <a class="flex bg-black rounded-md group hover:scale-[103%] duration-300" href="#">
+                        <span class="px-10 py-3 font-semibold text-white transition translate-x-6 bg-black rounded-md group-hover:translate-x-0">Find Your Domain</span>
+
+
+                        <div class="flex items-center text-white duration-300 origin-left scale-x-0 -translate-x-5 opacity-0 group-hover:scale-x-100 group-hover:opacity-100 tarnsition">
+                            <svg class="w-10 h-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </a>
                     <p class="flex font-semibold"><a class="flex hover:underline" href="#">Transfer Your Domain</a></p>
                 </div>
             </div>
@@ -247,7 +276,7 @@
         <!-- Pricing Section -->
         <section class="pt-5 lg:pt-20 px">
             <ul class="grid grid-cols-2 font-semibold border-r border-black lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-5 lg:border-b">
-                <li class="border-t border-l border-black">
+                <li class="border-t border-l border-black ">
                     <a class="flex justify-center w-full h-full text-center pricing-box" href="#">
                         <div class="grid content-center translate-x-6 price">
                             <p class="">.com</p>
@@ -376,7 +405,7 @@
         <!-- Services Section -->
         <section class="grid pt-5 md:grid-cols-2 gap-y-2 px lg:text-lg">
             <div class="flex items-center justify-center order-2 px-4 lg:px-32 md:order-1">
-                <div class="">
+                <div class="py-2 lg:py-0">
                     <p>Professional Email</p>
                     <p class="py-5 text-3xl font-bold lg:text-5xl bodoni">Build on your success.</p>
                     <p>Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@NeueBloom.com.</p>
@@ -391,7 +420,7 @@
                 <img class="w-full bg-center" src=".\images\bg-2.jpg">
                 
             </div>
-            <div class="grid order-4 lg:content-center gap-y-4 lg:px-20 ">
+            <div class="grid order-4 py-2 lg:content-center gap-y-4 lg:px-20 lg:py-0">
                 <p class="">SSL Security</p>
                 <p class="text-3xl font-bold lg:text-5xl bodoni">Protect your data and your customers.</p>
                 <p class="">An SSL Certificate protects the data going to and from your site — from personal info to credit card numbers. And when visitors feel safe, they're more likely to give you their business.</p>
@@ -400,7 +429,7 @@
                     <a class="flex items-center" href="#"><span class="hover:scale-[103%] transition hover:underline">Check your security</span></a>
                 </div>
             </div>
-            <div class="grid order-6 gap-4 px-4 md:order-5 lg:content-center lg:px-20">
+            <div class="grid order-6 gap-4 px-4 py-2 md:order-5 lg:content-center lg:px-20 lg:py-0">
                 <p>Hosting</p>
                 <p class="text-3xl font-bold lg:text-5xl bodoni">Fast, secure and always online.</p>
                 <p>Already have a website? Give it the home it deserves. With industry-leading load times, guaranteed 99.9% uptime and expert, 24/7 support, your site couldn’t ask for more.</p>
@@ -413,7 +442,7 @@
         <!-- End of Services -->
 
         <!-- Domain Search 2 -->
-        <section class="text-center bg-[#D8EFEF] py-20 lg:py-36 px-5 lg:mt-32 lg:grid lg:content-center">
+        <section class="text-center bg-[#D8EFEF] py-20 lg:py-36 px-5 mt-32 lg:grid lg:content-center">
             <p class="text-4xl font-bold lg:text-5xl bodoni">It all starts with a domain.</p>
             <p class="pt-5 font-semibold lg:pt-16">Make your idea real. Claim your space online with a domain.</p>
             <form class="flex justify-center pt-20 lg:pt-5">
@@ -426,7 +455,7 @@
         <!-- End of Domain Search 2 -->
 
         <!-- Why go Daddy -->
-        <section class="grid lg:grid-cols-2 lg:mt-20 bg-[#FAF4EF]">
+        <section class="grid lg:grid-cols-2 mt-20 bg-[#FAF4EF]">
             <!-- lg:bg-gradient-to-r lg:from-[#FDF5F2] lg:to-[#FFFFFF] -->
             <div>
                 <img class="" src=".\images\laugh.jpg">
@@ -440,7 +469,7 @@
                 <p>Because we know that even the best technology is only as good as the people behind it. That’s why we offer expert phone support, plus a lot more.  </p>
                 <p>Call our technical support team at Support Manila: (02) 8231-2988.</p>
                 <div class="flex">
-                    <a class="flex items-center" href="#"><span class="flex font-semibold px-5 py-3 border-2 border-black rounded-md hover:scale-[103%] transition">Get Help</span></a>
+                    <a class="flex items-center" href="#"><span class="flex font-semibold px-5 py-2 border-2 border-black rounded-md hover:scale-[103%] transition">Get Help</span></a>
                 </div>
                 
                 <!--  -->
@@ -449,28 +478,28 @@
         <!-- End of WHy goDaddy -->
 
         <!-- FAQ Section -->
-        <section class="w-full text-center lg:grid lg:justify-items-center lg:mt-20">
+        <section class="w-full mt-20 text-center lg:grid lg:justify-items-center">
             <div class="md:max-w-[80%] px-[5%] md:px-[10%] lg:max-w-[70%]">
                 <p class="text-4xl font-semibold lg:text-6xl px">Millions of customers rely on our domains and&nbsp;web hosting to get&nbsp;their ideas online.</p>
                 <p class="pt-5 text-2xl font-semibold px">Frequently Asked Questions</p>
             </div>
            
-            <div class="text-left px-[10%] pt-3 md:max-w-[80%] mx-auto lg:mt-16 lg:px-[0%]">
-                <div id="faq-1" class="py-5 border-t border-gray-500 cursor-pointer">
+            <div class="text-left px-[10%] pt-3 md:max-w-[80%] lg:mt-16 lg:px-[0] lg:w-[60%] lg:text-xl ">
+                <div id="faq-1" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-2xl font-semibold faq">How does GoDaddy help small business owners succeed?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">How does GoDaddy help small business owners succeed?</div>
                         <span><i id="faq-arrow-1" class="transition fa-solid fa-angle-down skew faq-arrow" data-index="1"></i></span>
                     </div>
-                    <div id="faq-answer-1" class="hidden pt-5 leading-normal faq-answer" data-index="1">
+                    <div id="faq-answer-1" class="hidden pt-5 lg:pr-[20%] leading-normal faq-answer" data-index="1">
                         GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional email helps you build a professional image, while our online marketing tools empower entrepreneurs to get online with an SEO-friendly website. GoDaddy is an all-in-one solution provider to get your idea online, backed with expert, personalized support from GoDaddy Guides.
                     </div>
                 </div>
-                <div id="faq-2" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-2" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why do I need a website for my business?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why do I need a website for my business?</div>
                         <span><i id="faq-arrow-2" class="transition fa-solid fa-angle-down faq-arrow" data-index="2"></i></span>
                     </div>
-                    <div id="faq-answer-2" class="hidden pt-5 leading-normal faq-answer" data-index="2">
+                    <div id="faq-answer-2" class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="2">
                         <p>Even small local businesses that only serve their hometown need a site. That's because the web is the first place people go when looking for a product or service. A website helps every business:</p>
                         <ul>
                         <li>Promote and sell their products and services</li>
@@ -482,12 +511,12 @@
                         Best of all, a website is much easier and more affordable than you might think. GoDaddy offers a complete selection of online tools for building websites, along with hosting, email and marketing options to grow their business on the web.
                     </div>
                 </div>
-                <div id="faq-3" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-3" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why do I need a professional email?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why do I need a professional email?</div>
                         <span><i id="faq-arrow-3" class="transition fa-solid fa-angle-down faq-arrow" data-index="3"></i></span>
                     </div>
-                    <div id="faq-answer-3" class="hidden pt-5 leading-normal faq-answer" data-index="3">
+                    <div id="faq-answer-3" class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="3">
                         <p>There are a lot of reasons to switch from your free email to a domain-based email, but here are the top 3:</p>
                         <ol>
                             <li>Customers are much more likely to trust a professional address like lily@lilysbikes.com than lilysbikestexas84@notmail.com.</li>
@@ -497,62 +526,62 @@
                     </div>
                 </div>
 
-                <div id="faq-4" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-4" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why get a domain name from GoDaddy?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why get a domain name from GoDaddy?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="4"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="4">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="4">
                         GoDaddy is the world’s largest and trusted domain registrar that empowers people like you with creative ideas to succeed online. <a class="underline hover:no-underline">Buying a domain name</a> is easy with our domain search tool and domain name generator tools you can find the perfect website address for your business.
                     </div>
                 </div>
 
-                <div id="faq-5" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-5" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why use GoDaddy Website Builder?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why use GoDaddy Website Builder?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="5"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="5">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="5">
                         Because it’s a fast, simple way to create a website that you — and your customers — will love. Simply type in your idea or industry and GoDaddy <a class="underline hover:no-underline">Website Builder</a> will pull up a number of professionally designed, ready-to-launch templates. From there, just add your own text and images and you’re good to go.
                     </div>
                 </div>
 
-                <div id="faq-6" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-6" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">What makes GoDaddy Web Hosting the world leader?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">What makes GoDaddy Web Hosting the world leader?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="6"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="6">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="6">
                         With nearly 20 years in the industry, we have the experience, the technology and the hosting experts to help web designers, developers, bloggers and online businesses create and maintain their online presence. Our secure <a class="underline hover:no-underline">web hosting platform</a>, complete with cPanel, offers a 99.9% uptime guarantee and award-winning support, which has helped nearly 21+ million customers get online.
                     </div>
                 </div>
 
-                <div id="faq-7" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-7" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why choose GoDaddy for WordPress?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why choose GoDaddy for WordPress?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="7"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="7">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="7">
                         GoDaddy offers reliable and affordable <a class="underline hover:no-underline">WordPress hosting</a> plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.
                     </div>
                 </div>
 
-                <div id="faq-8" class="py-5 border-t border-gray-500 cursor-pointer">
+                <div id="faq-8" class="py-5 border-t border-gray-500 cursor-pointer lg:py-10">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why should I transfer my domain, website or web hosting to GoDaddy?</div>
+                        <div class="pr-3 text-lg font-semibold lg:text-3xl faq">Why should I transfer my domain, website or web hosting to GoDaddy?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="8"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="8">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="8">
                         There are a few different reasons. Our award-winning support is always high on the list of why people move their presence to GoDaddy. Of course, our prices — including a free 1-year extension on many domain transfers — is another popular reason. And if you already have one or more of our products, transferring your domain, website or hosting to us lets you consolidate your web presence with one provider so it’s easier to manage.
                     </div>
                 </div>
 
-                <div id="faq-9" class="py-5 border-gray-500 cursor-pointer border-y">
+                <div id="faq-9" class="py-5 border-gray-500 cursor-pointer lg:py-10 border-y">
                     <div class="flex justify-between ">
-                        <div class="text-lg font-semibold faq">Why use the GoDaddy Logo Maker?</div>
+                        <div class="text-lg font-semibold lg:text-3xl faq">Why use the GoDaddy Logo Maker?</div>
                         <span><i class="transition fa-solid fa-angle-down faq-arrow" data-index="9"></i></span>
                     </div>
-                    <div class="hidden pt-5 leading-normal faq-answer" data-index="9">
+                    <div class="hidden pt-5 leading-normal faq-answer lg:pr-[20%]" data-index="9">
                         With the <a class="underline hover:no-underline" href="#">GoDaddy Logo Maker</a> it's easy to make a custom logo that'll help define your brand's personality and transform your business. From logomarks to logotypes, there are hundreds of templates to choose from. Or you can design your own in just minutes. No design skills needed.
                     </div>
                 </div>
