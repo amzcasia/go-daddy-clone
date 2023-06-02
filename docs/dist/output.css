@@ -731,6 +731,10 @@ video {
   width: 10dvw;
 }
 
+.w-\[3000px\] {
+  width: 3000px;
+}
+
 .w-\[35\%\] {
   width: 35%;
 }
@@ -829,6 +833,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-grab {
+  cursor: grab;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -912,8 +920,8 @@ video {
        column-gap: 2rem;
 }
 
-.gap-y-2 {
-  row-gap: 0.5rem;
+.gap-y-0 {
+  row-gap: 0px;
 }
 
 .gap-y-4 {
@@ -928,8 +936,20 @@ video {
   row-gap: 2rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .overflow-y-scroll {
@@ -1040,11 +1060,6 @@ video {
 .bg-myblk {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1279,6 +1294,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1368,8 +1388,14 @@ video {
   opacity: 0;
 }
 
-.opacity-50 {
-  opacity: 0.5;
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .backdrop-blur-\[2px\] {
@@ -1392,6 +1418,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.borderss {
+  border: 1px dashed black;
 }
 
 .px {
@@ -1445,6 +1475,19 @@ video {
     --tw-translate-x: 0.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
+}
+
+.card {
+  display: flex;
+  height: 450px;
+  width: 270px;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 /*
@@ -1857,6 +1900,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;

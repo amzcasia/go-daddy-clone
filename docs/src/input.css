@@ -50,7 +50,9 @@
     }
 }
 
-
+.card {
+    @apply w-[270px] h-[450px] bg-gray-300 flex items-center justify-center border border-black;
+}
 /*
 .price {
     @apply transition duration-300;

@@ -154,10 +154,10 @@
         <!-- End of Contact Dropdown -->
         <!-- User Login Section -->
         <section id="user-login" class="fixed top-0 h-[100dvh] w-full right-0 z-50 lg:absolute lg:top-[50px] lg:right-[60px] hidden">
-            <div class="blur-and-opacity bg-slate-300 w-[calc(100vw-320px)]  h-[100dvh] lg:hidden absolute left-0 opacity-50">
+            <div class="blur-and-opacity bg-white w-[calc(100vw-320px)]  h-[100dvh] lg:hidden absolute left-0 opacity-70">
 
             </div>
-            <div class="flex flex-col p-5 max-w-[320px] absolute right-0 bg-white h-full lg:h-auto lg:rounded-md lg:border">
+            <div class="flex flex-col p-5 max-w-[320px] absolute right-0 bg-white h-full lg:h-auto lg:rounded-md lg:border shadow-lg">
                 <button id="user-login-button-close" class="absolute w-5 h-5 top-2 right-2 ">
                     <i class="text-base text-black fa-solid fa-xmark"></i>
                 </button>
@@ -208,7 +208,7 @@
                     <span class="text-xl font-bold">.co</span>
                     <span>P299.00</span>
                 </div>
-                <div class="flex items-center gap-1">
+                <div class="items-center hidden gap-1 xl:flex">
                     <span class="text-xl font-bold" text-lg>.inc</span>
                     <span>P56,189.11</span>
                 </div>
@@ -398,13 +398,33 @@
         </section> 
         <!-- End of Pricing Section-->
         <!-- Testimonials Section -->
-        <section>
-
+        <section class="hidden">
+            <div class="text-3xl font-semibold px"><p >Trusted by 21+ million customers around the world.</p></div>
+            <div id="card-container" class="overflow-x-scroll bg-black">
+                <div class="flex w-[3000px] cursor-grab text-center text-5xl">
+                    <div class="card">1</div>
+                    <div class="card">2</div>
+                    <div class="card">3</div>
+                    <div class="card">4</div>
+                    <div class="card">5</div>
+                    <div class="card">6</div>
+                    <div class="card">7</div>
+                    <div class="card">8</div>
+                    <div class="card">9</div>
+                    <div class="card">10</div>
+                </div>
+            </div>
+            <div>
+                <p>Trustpilot Logo</p>
+                <div>star rating</div>
+                <p>4.7 out of 5 stars based on 70,238 reviews
+                Showing our 4 and 5 stars reviews.</p>
+            </div>
         </section>
         <!-- End of Testimonials -->
         <!-- Services Section -->
-        <section class="grid pt-5 md:grid-cols-2 gap-y-2 px lg:text-lg">
-            <div class="flex items-center justify-center order-2 px-4 md:order-1">
+        <section class="grid pt-5 md:grid-cols-2 gap-y-0 px lg:text-lg">
+            <div class="flex items-center justify-center order-2 px-4 py-1 md:order-1">
                 <div class="py-2 lg:py-0 lg:max-w-[70%]">
                     <p>Professional Email</p>
                     <p class="py-5 text-3xl font-bold lg:text-5xl bodoni">Build on your success.</p>
@@ -481,7 +501,7 @@
         <!-- End of WHy goDaddy -->
 
         <!-- FAQ Section -->
-        <section class="w-full mt-20 text-center lg:grid lg:justify-items-center">
+        <section class="grid w-full mt-20 text-center justify-items-center">
             <div class="md:max-w-[80%] px-[5%] md:px-[10%] lg:max-w-[70%]">
                 <p class="text-4xl font-semibold lg:text-6xl px">Millions of customers rely on our domains and&nbsp;web hosting to get&nbsp;their ideas online.</p>
                 <p class="pt-5 text-2xl font-semibold px">Frequently Asked Questions</p>
@@ -641,7 +661,7 @@
         <nav class="grid grid-cols-1 pt-10 text-sm text-white md:grid-cols-2 lg:grid-cols-6 bg-myblk px">
             <div class="">
                 <!-- <p class="text-base font-semibold hover:cursor-pointer md:hover:cursor-default">About Go Daddy</p> -->
-                <div id="footer-about-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults ">
+                <div id="footer-about-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default">
                     <p class="text-base font-semibold">About Go Daddy</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -657,7 +677,7 @@
                 </ul>
             </div>
             <div class="pt-5 md:pt-0">
-                <div id="footer-support-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults" >
+                <div id="footer-support-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default" >
                     <p class="text-base font-semibold">Support</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -670,7 +690,7 @@
                 </ul>
             </div>
             <div class="pt-5 md:pt-10 lg:pt-0">
-                <div id="footer-resources-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults">
+                <div id="footer-resources-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default">
                     <p class="text-base font-semibold">Resources</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -685,7 +705,7 @@
                 </ul>
             </div>
             <div class="pt-5 md:pt-10 lg:pt-0">
-                <div id="footer-partner-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults">
+                <div id="footer-partner-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default">
                     <p class="text-base font-semibold">Partner Programs</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -696,7 +716,7 @@
                 </ul>
             </div>
             <div class="pt-5 md:pt-10 lg:pt-0">
-                <div id="footer-account-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults">
+                <div id="footer-account-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default">
                     <p class="text-base font-semibold">Account</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -707,7 +727,7 @@
                 </ul>
             </div>
             <div class="pt-5 md:pt-10 lg:pt-0">
-                <div id="footer-shopping-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-defaults">
+                <div id="footer-shopping-heading" class="flex justify-between hover:cursor-pointer md:hover:cursor-default">
                     <p class="text-base font-semibold">Shopping</p>
                     <span class="text-lg font-semibold md:hidden">+</span>
                 </div>
@@ -764,9 +784,9 @@
                 </div>
             </div>
             <div class="flex justify-around pt-4 socials lg:gap-x-14">
-                <i class="text-2xl text-white fa-brands fa-facebook"></i>
-                <i class="text-2xl text-white fa-brands fa-twitter"></i>
-                <i class="text-2xl text-white fa-brands fa-youtube"></i>
+                <a href="#"><i class="text-2xl text-white fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="text-2xl text-white fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="text-2xl text-white fa-brands fa-youtube"></i></a>
             </div>
         </section>
         <div class="hidden px bg-myblk md:col-span-2 lg:block"><hr></div> <!-- horizontal line -->

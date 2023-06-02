@@ -57,6 +57,8 @@ const FOOTER_PARTNER_INDEX = 3;
 const FOOTER_ACCOUNT_INDEX = 4;
 const FOOTER_SHOPPING_INDEX = 5;
 
+const cardContainer = document.getElementById("card-container");
+
 mobileNavClose.addEventListener("click",()=>{
     mobileSlidingNav.classList.add("bg-opacity-0");
     mobileSlidingNav.classList.remove("bg-opacity-60");
@@ -226,7 +228,23 @@ productLimitClose.addEventListener("click", ()=> {
 
 });
 
+cardContainer.addEventListener("mousemove", (e)=>{
+    // console.log(e.pageX + " " + e.pageY);
+});
 
+let startX = 0;
+let endX = 0;
+
+
+cardContainer.addEventListener("mousedown",(e) => {
+    startX = e.pageX;
+    console.log("start : " + startX);
+});
+
+cardContainer.addEventListener("mouseup",(e) => {
+    endX = e.pageX;
+    console.log("end : " + endX);
+});
 
 
 
