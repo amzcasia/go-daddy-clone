@@ -4,6 +4,7 @@
 
 const body = document.querySelector("body");
 const mobileSlidingNav = document.getElementById("mobile-sliding-nav");
+const mobileSlidingNavContent = document.getElementById("mobile-sliding-nav-content");
 const mobileNavClose = document.getElementById("mobile-nav-close");
 const mobileNavOpen = document.getElementById("mobile-nav-open");
 const mobileNavLogo = document.getElementById("mobile-nav-logo");
@@ -56,30 +57,50 @@ const FOOTER_PARTNER_INDEX = 3;
 const FOOTER_ACCOUNT_INDEX = 4;
 const FOOTER_SHOPPING_INDEX = 5;
 
+const cardContainer = document.getElementById("card-container");
+
 mobileNavClose.addEventListener("click",()=>{
-    mobileSlidingNav.classList.add('translate-x-[-100%]');
+    mobileSlidingNav.classList.add("bg-opacity-0");
+    mobileSlidingNav.classList.remove("bg-opacity-60");
+    mobileSlidingNavContent.classList.add("translate-x-[-100%]");
+    mobileNavClose.classList.add("opacity-0");
     body.classList.remove("overflow-hidden");
+    setTimeout(() => {
+        mobileSlidingNav.classList.add("hidden");
+    },500);
 });
 
 mobileNavLogo.addEventListener("click",()=>{
-    mobileSlidingNav.classList.add('translate-x-[-100%]');
+    mobileSlidingNav.classList.add("bg-opacity-0");
+    mobileSlidingNav.classList.remove("bg-opacity-60");
+    mobileSlidingNavContent.classList.add("translate-x-[-100%]");
+    mobileNavClose.classList.add("opacity-0");
     body.classList.remove("overflow-hidden");
+    setTimeout(() => {
+        mobileSlidingNav.classList.add("hidden");
+    },500);
 });
 
 mobileNavOpen.addEventListener("click",()=>{
-    mobileSlidingNav.classList.remove('translate-x-[-100%]');
-    body.classList.add("overflow-hidden");
+    mobileSlidingNav.classList.remove("hidden");
+    setTimeout(() => {
+        mobileSlidingNav.classList.remove("bg-opacity-0");
+        mobileSlidingNav.classList.add("bg-opacity-60");
+        mobileSlidingNavContent.classList.remove("translate-x-[-100%]");
+        body.classList.add("overflow-hidden");
+        mobileNavClose.classList.remove("opacity-0"); 
+    }, 1);
 });
 
 contactNav.addEventListener("click", () => {
     contactDropdown.classList.toggle("hidden");
     setTimeout(() => {
         contactDropdown.classList.toggle("scale-y-0");
-    setTimeout(() => {
-        contactEntry.forEach(x => {
-            x.classList.toggle("hidden");
-        });
-    }, 300);
+        setTimeout(() => {
+            contactEntry.forEach(x => {
+                x.classList.toggle("opacity-0");
+            });
+        }, 300);
     }, 1);
 });
 
@@ -87,11 +108,11 @@ contactNavLg.addEventListener("click", () => {
     contactDropdown.classList.toggle("hidden");
     setTimeout(() => {
         contactDropdown.classList.toggle("scale-y-0");
-    setTimeout(() => {
-        contactEntry.forEach(x => {
-            x.classList.toggle("hidden");
-        });
-    }, 300);
+        setTimeout(() => {
+            contactEntry.forEach(x => {
+                x.classList.toggle("opacity-0");
+            });
+        }, 300);
     }, 1);
 });
 
@@ -207,7 +228,23 @@ productLimitClose.addEventListener("click", ()=> {
 
 });
 
+cardContainer.addEventListener("mousemove", (e)=>{
+    // console.log(e.pageX + " " + e.pageY);
+});
 
+let startX = 0;
+let endX = 0;
+
+
+cardContainer.addEventListener("mousedown",(e) => {
+    startX = e.pageX;
+    console.log("start : " + startX);
+});
+
+cardContainer.addEventListener("mouseup",(e) => {
+    endX = e.pageX;
+    console.log("end : " + endX);
+});
 
 
 
